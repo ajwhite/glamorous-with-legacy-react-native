@@ -11,11 +11,19 @@ import React, {
   Text,
   View
 } from 'react-native';
+import glamorous from 'glamorous-native';
+
+const Container = glamorous.view({
+  flex: 1,
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: '#F5FCFF'
+})
 
 class LegacyReactTest extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <Container>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
@@ -26,18 +34,12 @@ class LegacyReactTest extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
-      </View>
+      </Container>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
   welcome: {
     fontSize: 20,
     textAlign: 'center',

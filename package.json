@@ -6,6 +6,7 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "glamorous-native": "git+ssh://git@github.com/robinpowered/glamorous-native.git#graceful-react-version-components",
     "react": "^0.14.9",
     "react-native": "^0.24.0"
   }
